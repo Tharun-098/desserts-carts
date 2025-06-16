@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="product">
+      <h2>Desserts</h2>
+      <div class="products" id="products">
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input1')"><img
+                  src="assets/images/icon-increment-quantity.svg" "></button><input type="
+                  text" value="0" placeholder="0" id="input1"><button class="bt2" onclick="decrement('input1')"><img
+                    src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Waffle</p>
+          <p class="para">Waffle with Berries</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">65.0</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-creme-brulee-desktop.jpg" alt="vanilla bun"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input2')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input2"><button class="bt2" onclick="decrement('input2')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Crème Brûlée</p>
+          <p class="para">Vanilla Bean Crème Brûlée</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">67.0</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images//image-macaron-desktop.jpg" alt="Macaron"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input3')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input3"><button class="bt2" onclick="decrement('input3')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Macaron</p>
+          <p class="para">Macaron Mix of five</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">68.0</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-tiramisu-desktop.jpg" alt="Tiramisu"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input4')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input4"><button class="bt2" onclick="decrement('input4')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Tiramisu</p>
+          <p class="para">lassic Tiramisu</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">65.50</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-baklava-desktop.jpg" alt="Baklava"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input5')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input5"><button class="bt2" onclick="decrement('input5')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Baklava</p>
+          <p class="para">Pistachio Baklava</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">64.0</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-meringue-desktop.jpg" alt="pie"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input6')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input6"><button class="bt2" onclick="decrement('input6')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Pie</p>
+          <p class="para">Lemon Meringue Pie</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">65.0</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-cake-desktop.jpg" alt="cake" class="product_img"
+              id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input7')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input7"><button class="bt2" onclick="decrement('input7')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>cake</p>
+          <p class="para">Red Velvet Cake</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">64.50</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-brownie-desktop.jpg" alt="cake"
+              class="product_img" id="prod">
+            <p class="p"><img src="assets/images/icon-add-to-cart.svg" alt="cart"
+                class="cart">Add to Cart</p>
+            <div class="hover"><button onclick="increment('input8')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input8"><button class="bt2" onclick="decrement('input8')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Brownie</p>
+          <p class="para">Salted Caramel Brownie</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">65.50</span></p>
+        </div>
+        <div class="image">
+          <div class="carts">
+            <img src="assets/images/image-panna-cotta-desktop.jpg" alt="cake"
+              class="product_img" id="prod">
+            <p><img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">Add to
+              Cart</p>
+            <div class="hover"><button onclick="increment('input9')"><img
+                  src="assets/images/icon-increment-quantity.svg"></button><input
+                type="text" placeholder="0" value="0" id="input9"><button class="bt2" onclick="decrement('input9')"><img
+                  src="assets/images/icon-decrement-quantity.svg"></button></div>
+          </div>
+          <p>Panna Cotta</p>
+          <p class="para">Vanilla Panna Cotta</p>
+          <p class="para paras"><span style="font-weight: 400;color:black;">$</span><span
+              style="margin-left: 2px;font-weight: 400;">66.50</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="cart_s">
+      <div class="cart_ss">
+
+        <h2>Your Cart (<input type="text" placeholder="0" value="0" class="cart-input">)</h2>
+        <div class="cart_icon">
+          <img src="assets/images/illustration-empty-cart.svg" alt="empty">
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="list">
+          <!-- <li>
+        <div class="pro">
+          <p>tiramisu</p>
+          <p><span class="quantity">1x</span><span class="rate">$5.50</span><span class="total">$10.5</span></p>
+        </div>
+        <div class="icon">
+          <img src="/product-list-with-cart-main/assets/images/icon-remove-item.svg">
+        </div>
+      </li>  -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="overlay"></div> -->
+    <div class="list-dis" id="list-dis">
+      <p><img src="assets/images/icon-order-confirmed.svg"></p>
+      <h1>Order Confirmed</h2>
+        <p>We hope enjoy your food</p>
+        <div class="list-item">
+          <!-- <li>
+          <div class="image">
+            <img src="/product-list-with-cart-main/assets/images/image-brownie-desktop.jpg">
+            <div class="content">
+              <p>classic tiramisu</p>
+              <p><span>4x</span><span>$5.00</span></p>
+            </div>
+          </div>
+          <div class="tot">
+            <span>$6.00</span>
+          </div>
+        </li> -->
+        </div>
+        <!-- <button onclick="exhaust()">Start new Order</button> -->
+    </div>
+  </div>
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>

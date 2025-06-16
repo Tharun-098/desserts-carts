@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: hsl(20, 50%, 98%);
+}
+.container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product{
+    flex-basis: 60%;
+}
+.product h2{
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    font-size: 25px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.image{
+    flex-basis: 25%;
+}
+.carts{
+    position: relative;
+}
+.carts .product_img{
+    width: 248px;
+    height: 248px;
+    border-radius: 20px;
+}
+.image .carts .p{
+    color: black;
+}
+.carts p{
+    border: solid 1px hsl(14, 65%, 9%);
+    border-radius: 30px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -27px;
+    left: 50px;
+    z-index: 1;
+    background-color: hsl(13, 31%, 94%);
+    color: black;
+}
+.carts p img{
+    width: 20px;
+    height: 20px;
+}
+.hover{
+    background-color: hsl(14, 86%, 42%);
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    position:absolute;
+    bottom: -10px;
+    left: 51px;
+    z-index: 1;
+    height: 20px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover:hover{
+    opacity: 1;
+}
+.hover button{
+    background-color: hsl(14, 86%, 42%);
+    border:white 1px solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.bt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hover input{
+    width: 15%;
+    margin: 0 10px;
+    background-color:hsl(14, 86%, 42%);
+    border: none;
+}
+.hover input::placeholder{
+    color: white;
+}
+.image p{
+    color: hsl(7, 20%, 60%);
+}
+.image .para{
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+}
+.image .paras span{
+    color: hsl(14, 86%, 42%);
+}
+.image .paras{
+    color: hsl(14, 86%, 42%);
+}
+.cart_s h2{
+    color: hsl(14, 86%, 42%);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: left;
+}
+.cart_s input{
+    width: 10%;
+    border: none;
+    height: 25px;
+    font-size: 28px;
+    color: hsl(14, 86%, 42%);
+    background-color: hsl(0, 0%, 99%);
+    text-align: center;
+}
+.cart_s p{
+    color: hsl(7, 20%, 60%);
+}
+.cart_ss{
+    background-color: hsl(0, 0%, 99%);
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cart_ss input::placeholder{
+    color: #c73a0f;
+}
+.list{
+    list-style-type: none;
+
+}
+.list li div:first-child p{
+    color: hsl(14, 65%, 9%);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.list span{
+    font-size: 16px;
+}
+span:first-child{
+     color: hsl(14, 86%, 42%);
+     font-weight: 600;
+}
+span:nth-child(2){
+    color: hsl(7, 20%, 60%);
+    margin-left: 10px;
+}
+span:last-child{
+    color: hsl(14, 65%, 9%);
+    font-weight: 900;
+    margin-left: 10px;
+}
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 15px;
+    border-bottom: 2px hsl(13, 31%, 94%) solid;
+}
+.list li:last-child{
+    border-bottom: none;
+}
+.list li:last-child button{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: hsl(14, 86%, 42%);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+#order,#val{
+    margin: 10px;
+    font-size: 20px;
+    border-bottom: none;
+}
+.list li div:last-child span{
+    text-align: center;
+    padding: 5px;
+    font-size: 23px;
+}
+.list li div:last-child span:hover{
+    border: 1px solid hsl(14, 65%, 9%);
+    border-radius: 50%;
+}
+.list li div:first-child{
+    text-align: left;
+}
+
+.list-dis{
+    margin-top: 20px;
+    min-width: 300px;
+    max-width: 600px;
+    border-radius: 30px;
+    background-color:hsl(0, 0%, 99%);
+    padding: 20px;
+}
+.list-dis p,h1{
+    margin: 0;
+    margin-top: 7px;
+}
+.list-item{
+    background-color: hsl(13, 31%, 94%);
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.list-item{
+    list-style-type: none;
+}
+.list-dis button{
+    width:100%;
+    background-color: hsl(14, 86%, 42%);
+    color: wheat;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.list-dis p{
+    color: hsl(7, 20%, 60%);
+}
+.list-item img{
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+}
+.list-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.list-item .image{
+    display: flex;
+    flex-grow: 1;
+}
+.content{
+    margin-left:5px;
+}
+
+.container{
+    position: relative;
+    top: 0;
+}
+.list-dis{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display: none;
+}
+ /* .overlay{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}  */
+@media screen and (min-width:320px) and (max-width:425px){ 
+    body{
+        display: grid;
+        place-content:center;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        padding: 0;
+    }
+    
+    .cart_ss{
+        width: 300px;
+    }
+    .cart_ss h2{
+        text-align: center;
+    }
+    .container{
+        margin: auto;
+        height:fit-content;
+    }
+    .cart_s{
+        position: relative;
+        bottom: 0;
+    }
+    .list-item{
+        padding: 10px;
+    }
+    .list-dis{
+        position:sticky;
+        bottom: 0;
+        top: auto;
+        transform: translateX(0%);
+    }
+}
